@@ -1,25 +1,25 @@
 # Smart Pantry Manager
 
-An Android app (Java) that helps reduce food waste. The user records the ingredients they
-already have at home and the app suggests **only** the recipes they can cook right now -
-no shopping trip required.
+I designed the smart pantry manager android app, in java, to help reduce food waste. The user records the ingredients they
+already have at home and the app suggests recipes they can cook right now, with no shopping trip required.
 
 Mobile App Development 700 - Practical Assignment.
 
-## Features
-- Pantry CRUD: add, edit, delete ingredients (name, quantity, unit, optional expiry date)
-- Pantry list (RecyclerView + custom adapter) with expired / expiring-soon colouring
-- 21 recipes pre-loaded into the database on first run
-- **Suggested Recipes** screen using the strict-matching rule (see below)
-- Optional "Almost there" tab (recipes missing exactly one ingredient), kept separate
-- Recipe detail screen with tick/cross per ingredient and numbered method
-- Settings: expiring-soon banner, ignore expired items, default unit
-- Friendly empty states, input validation, bottom navigation bar
-- No Google Maps, no location/GPS permissions
+# Features
+- Pantry CRUD: add, edit, delete ingredients (name, quantity, unit, optional expiry date).
+- Pantry list (RecyclerView + custom adapter) with expired or expiring-soon colouring.
+- 21 recipes pre-loaded into the database on first run.
+- Suggested Recipes screen using the matching rule.
+- Optional "Almost there" tab (recipes missing exactly one ingredient), kept separate.
+- Recipe detail screen with tick/cross per ingredient and numbered method.
+- Settings: expiring-soon banner, ignore expired items, default unit.
+- Friendly empty states, input validation, bottom navigation bar.
+- No Google Maps, no location/GPS permissions.
 
 ## Strict-matching rule
-A recipe is suggested only if **every** ingredient is in the pantry in at least the required
-quantity. Implemented in `logic/RecipeMatcher.java` (plain Java, unit-tested) with:
+A recipe is suggested only if every ingredient is in the pantry in at least the required
+quantity.
+Implemented in `logic/RecipeMatcher.java` (plain Java, unit-tested) with:
 - name normalisation: case, plurals, filler words, synonyms (`tomato` = `Tomatoes`) - `IngredientNormalizer`
 - unit conversion within mass / volume / count families (`1 kg` covers `500 g`) - `UnitConverter`
 - duplicate pantry rows for the same ingredient are summed
