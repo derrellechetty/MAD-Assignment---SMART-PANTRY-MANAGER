@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand / Primary Colors -->
+    <color name="green_primary">#1E5E3A</color>
+    <color name="green_dark">#123B24</color>
+    <color name="green_light">#E8F5EE</color>
+    <color name="primary">#1E5E3A</color>
+    <color name="primary_variant">#123B24</color>
+    <color name="primary_container">#E8F5EE</color>
+
+    <!-- Accent / Secondary Colors -->
+    <color name="accent">#D97706</color>
+    <color name="amber">#D97706</color>
+    <color name="amber_light">#FEF3C7</color>
+
+    <!-- Status & Alerts -->
+    <color name="ok_green">#16A34A</color>
+    <color name="ok_green_bg">#DCFCE7</color>
+    <color name="warning_text">#B45309</color>
+    <color name="warning_bg">#FEF3C7</color>
+    <color name="warning_border">#FDE68A</color>
+    <color name="expired">#DC2626</color>
+    <color name="red_expired">#DC2626</color>
+    <color name="red_light">#FEE2E2</color>
+    <color name="red_border">#FECACA</color>
+
+    <!-- Neutral & Backgrounds -->
+    <color name="background">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="card_stroke">#E2E8F0</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#E2E8F0</color>
+</resources>

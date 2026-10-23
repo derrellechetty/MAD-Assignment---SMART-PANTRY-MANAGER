@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- No location / maps permissions: the app only deals with the pantry and recipes. -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartPantry">
+
+        <!-- Pantry List (launcher + bottom-nav tab 1) -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add / Edit ingredient -->
+        <activity
+            android:name=".ui.AddEditItemActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!-- Suggested recipes (bottom-nav tab 2) -->
+        <activity
+            android:name=".ui.SuggestedRecipesActivity"
+            android:exported="false" />
+
+        <!-- Recipe detail -->
+        <activity
+            android:name=".ui.RecipeDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.SuggestedRecipesActivity" />
+
+        <!-- Settings (bottom-nav tab 3) -->
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:exported="false" />
+    </application>
+</manifest>
